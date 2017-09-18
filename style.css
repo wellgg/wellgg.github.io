@@ -1,0 +1,43 @@
+canvas {
+	margin: auto;
+	display: block;
+	width: 17%;
+}
+hr {
+	border: .03vw solid black;
+	width: 50%;
+}
+button {
+	background-color: black;
+	border: none;
+	border-radius: 1vw;
+	color: white;
+	padding: 1vw 2vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 2vw;
+	cursor: pointer;
+	outline: none;
+	font-family: Courier, Ariel, sans-serif;
+}
+body {
+	font-family: Courier, Ariel, sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 5vw;
+	line-height: 0px;
+}
+h2 {
+	font-size: 4vw;
+}
+h3 {
+	font-size: 2vw;
+	font-weight: normal;
+}
+p {
+	font-size: 2vw;
+	font-weight: bold;
+	margin: 4vw;
+}
