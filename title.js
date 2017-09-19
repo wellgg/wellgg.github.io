@@ -2,10 +2,10 @@ var title = document.getElementById("animtitle");
 var tctx = title.getContext("2d");
 var lettery = [90,90,90,90,90,90,90,90,90];
 var cycle = 0;
-tctx.font = "50px courier";
+tctx.font = "bold 50px 'Ubuntu Mono'";
 title.addEventListener('click', function() {
 	tctx.fillStyle = "black";
-	tctx.font = "50px courier";
+	tctx.font = "bold 50px 'Ubuntu Mono'";
 	if (cycle > 6) {
 		cycle = 0;
 	}else{
