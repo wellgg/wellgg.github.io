@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto+Slab');
+canvas {
+	margin: auto;
+	display: block;
+	width: 17%;
+}
+hr {
+	border: .9vw solid black;
+}
+button {
+	background-color: black;
+	border: none;
+	border-radius: 1vw;
+	color: white;
+	padding: 1vw 2vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 5vw;
+	cursor: pointer;
+	outline: none;
+	font-family: Courier, Ariel, sans-serif;
+	width: 30%;
+	height: 15%;
+}
+body {
+	font-family: "Roboto Slab", Ariel, sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 8vw;
+	line-height: 0px;
+}
+h2 {
+	font-size: 4vw;
+}
+h3 {
+	font-size: 3vw;
+	font-weight: normal;
+}
+h4 {
+	font-family: "Ubuntu Mono";
+	font-size: 13vw;
+	margin: 2vw;
+}
+p {
+	font-size: 5vw;
+	margin: 4vw;
+}
