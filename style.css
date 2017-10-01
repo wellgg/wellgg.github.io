@@ -6,18 +6,18 @@ canvas {
 }
 hr {
 	border: 1px solid black;
-	width: 50%;
+	width: 100%;
 }
 button {
 	background-color: black;
 	border: none;
 	border-radius: 10px;
 	color: white;
-	padding: 15px 30px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	font-size: 33px;
+	display: block;
+	margin: auto;
+	font-size: 12vw;
 	cursor: pointer;
 	outline: none;
 	font-family: Courier, Ariel, sans-serif;
@@ -39,10 +39,38 @@ h3 {
 }
 h4 {
 	font-family: "Ubuntu Mono";
-	font-size: 130px;
-	margin: 35px;
+	font-size: 18vw;
+	margin: 0px;
 }
 p {
-	font-size: 38px;
-	margin: 60px;
+	font-size: 5vw;
+	margin: 0px;
+}
+@media only screen and (min-width: 768px) {
+	h4 {
+		font-size: 8vw;
+		margin: 35px;
+	}
+	hr {
+		width: 50%;
+	}
+	button {
+		display: inline-block;
+		margin: 0px;
+		background-color: black;
+		border: none;
+		border-radius: 10px;
+		color: white;
+		padding: 15px 30px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 33px;
+		cursor: pointer;
+		outline: none;
+		font-family: Courier, Ariel, sans-serif;
+	}
+	p {
+		font-size: 38px;
+		margin: 60px;
+	}
 }
