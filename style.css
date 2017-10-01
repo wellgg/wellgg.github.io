@@ -5,19 +5,19 @@ canvas {
 	width: 17%;
 }
 hr {
-	border: .03vw solid black;
-	width: 50%;
+	border: 1px solid black;
+	width: 100%;
 }
 button {
 	background-color: black;
 	border: none;
-	border-radius: 1vw;
+	border-radius: 10px;
 	color: white;
-	padding: 1vw 2vw;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	font-size: 2vw;
+	display: block;
+	margin: auto;
+	font-size: 12vw;
 	cursor: pointer;
 	outline: none;
 	font-family: Courier, Ariel, sans-serif;
@@ -27,22 +27,50 @@ body {
 	text-align: center;
 }
 h1 {
-	font-size: 5vw;
+	font-size: 80px;
 	line-height: 0px;
 }
 h2 {
-	font-size: 4vw;
+	font-size: 65px;
 }
 h3 {
-	font-size: 2vw;
+	font-size: 38px;
 	font-weight: normal;
 }
 h4 {
 	font-family: "Ubuntu Mono";
-	font-size: 8vw;
-	margin: 2vw;
+	font-size: 17vw;
+	margin: 0px;
 }
 p {
-	font-size: 2vw;
-	margin: 4vw;
+	font-size: 5vw;
+	margin: 0px;
+}
+@media only screen and (min-width: 768px) {
+	h4 {
+		font-size: 8vw;
+		margin: 35px;
+	}
+	hr {
+		width: 50%;
+	}
+	button {
+		display: inline-block;
+		margin: 0px;
+		background-color: black;
+		border: none;
+		border-radius: 10px;
+		color: white;
+		padding: 15px 30px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 33px;
+		cursor: pointer;
+		outline: none;
+		font-family: Courier, Ariel, sans-serif;
+	}
+	p {
+		font-size: 38px;
+		margin: 60px;
+	}
 }

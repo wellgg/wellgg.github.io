@@ -1,3 +1,3 @@
 # wellgg.github.io
 
-dummy website
+Our website thingy

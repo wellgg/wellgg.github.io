@@ -1,26 +1,40 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Well... gg - Home</title>
-		<meta charset=UTF-8>
-		<meta name=description content="Well... gg">
-		<meta name=keywords content="gg">
-		<meta name=author content="wellgg">
-		<meta name=viewport content="width=device-width, initial-scale=1.0">
+		<title>Well... gg</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Well... gg">
+		<meta name="keywords" content="gg">
+		<meta name="author" content="wellgg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script>
+			function loadPage (page) {
+				if (err) content.removeChild(content.children[0]); err = false
+				content.setAttribute('w3-include-html', "pages/"+ page + '.html')
+				w3.includeHTML()
+				if (content.children.length === 0) {
+					var err = true;
+					var pg = document.createElement('P')
+					var txt = document.createTextNode('Uh-oh! Something went wrong! ¯\\(°_o)/¯')
+					pg.appendChild(txt)
+					content.appendChild(pg)
+				}
+			}
+		</script>
 	</head>
-	<body>
+	<body onload="var content = document.getElementById('content');loadPage('home')">
 		<h4>well... gg</h4>
 		<hr />
 		<br />
-		<button onclick="window.location.assign('index.html')">Home</button>
-		<button onclick="window.location.assign('week0.html')">Week 0</button>
-		<button onclick="window.location.assign('about.html')">About</button>
+		<button onclick="loadPage('home')">Home</button>
+		<button onclick="loadPage('week0')">Week 0</button>
+		<button onclick="loadPage('week2')">Week 2</button>
+		<button onclick="loadPage('about')">About</button>
 		<br />
 		<br />
 		<hr />
-		<h1>Home</h1>
-		<p>Welcome to the home of the Wellgg organization!</p>
-		<p>More stuff will go here soon!</p>
-		<script src="title.js"></script>
+		<div id="content"></div> 
 	</body>
-</html>	
+</html>
